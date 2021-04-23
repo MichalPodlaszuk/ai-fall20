@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>hello strive 2</h1>
+
+<p>Please upload an image</p>
+
+<form action="/model_specify" method="post" enctype="multipart/form-data">
+  <label for="cars">Choose option:</label>
+  <input type="email" name="email">
+  <input type="password" name="user_key">
+  <input class="" type="submit">
+</form>
+<p>Don't have an account?</p>
+<form action="/create_user" method="get" enctype="multipart/form-data">
+<input class="" type="submit" value="register">
+</form>
+
+
+{% endblock content %}

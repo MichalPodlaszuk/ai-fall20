@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>hello strive 2</h1>
+
+<p>Please upload an image</p>
+
+<form action="/file_upload" method="post" enctype="multipart/form-data">
+  <label for="prediction">Choose an option:</label>
+    <select id="prediction" name="prediction">
+        <option value="correct">Correct or incorrect image</option>
+        <option value="ant">Ant or bee</option>
+    </select>
+  <input type="file" id="myfile" name="file_1">
+  <input type="email" name="email">
+  <input type="password" name="user_key">
+  <input class="" type="submit">
+</form>
+<p>Don't have an account?</p>
+<form action="/create_user" method="get" enctype="multipart/form-data">
+<input class="" type="submit" value="register">
+</form>
+
+
+{% endblock content %}
